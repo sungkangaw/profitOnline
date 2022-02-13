@@ -1,0 +1,57 @@
+[SHOPEE_COLUMN_INCOME]
+WEEK=5
+ORDER_NO=1
+SHIPPING_FEE_CUSTOMER=12
+SHIPPING_FEE_PLATFORM=13
+SHIPPING_FEE_SELLER=14
+
+[SHOPEE_COLUMN_ORDER]
+PARCEL_TRACKING_NO=13
+PARENT_SKU=16
+SKU=18
+DETAILS=17
+SALE_QUANTITY=22
+SALE_PRICE=23
+PAYMENT_FEE=35
+SERVICE_FEE=40
+PROVINCE=48
+DISTRICT=49
+
+[LAZADA_COLUMN]
+WEEK=0
+TRANSACTION_TYPE=1
+FEE_NAME=2
+DETAILS=4
+SKU=5
+AMOUNT=7
+ORDER_NO=13
+ORDER_ITEM_NO=14
+
+[OUTPUT_COLUMN]
+OUT_COLUMNS = [
+    "Week",
+    "Platform",
+    "Order Number",
+    "Item Number",
+    "Parent SKU",
+    "Product SKU",
+    "Stock Place",
+    "Detail",
+    "Sale Quantity",
+    "Unit Cost",
+    "Total Cost",
+    "Sale Price",
+    "Profit",
+    "Profit Percent",
+    "Payment Fee",
+    "Bonus",
+    "Service Fee",
+    "Net Profit",
+    "Net Profit Percent",
+    "Shipping Fee Customer",
+    "Shipping Fee Platform",
+    "Shipping Fee Seller",
+    "Shipping Fee Sum",
+    "Province",
+    "District",
+    "Parcel Tracking No."]
