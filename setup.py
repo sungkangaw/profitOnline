@@ -19,7 +19,7 @@ build_exe_options = {"excludes": ["tkinter", "sqlite3",
                      "optimize": 2}
 
 setup(name = "calculate" ,
-      version = "0.2.8" ,
+      version = "0.2.9" ,
       description = "" ,
       options = {"build_exe": build_exe_options},
       executables = [Executable("calculate.py")])
@@ -50,3 +50,6 @@ setup(name = "calculate" ,
 
 #0.2.8
 #Fix shopee bonus column (not used)
+
+#0.2.9
+#Seperate columns into config file
