@@ -99,8 +99,6 @@ class ShopeeSale(Sale):
 def read_and_create_shopee_inventory(income_file_path, order_file_path, inventory, configs):
     SHOPEE_COLUMN_INCOME = configs.SHOPEE_COLUMN_INCOME
     SHOPEE_COLUMN_ORDER = configs.SHOPEE_COLUMN_ORDER
-    print(SHOPEE_COLUMN_INCOME)
-    print(SHOPEE_COLUMN_ORDER)
 
     sale_inventory = ShopeeSummary()
     with open(order_file_path, 'r', encoding='utf-8-sig') as order_file, open(income_file_path, 'r', encoding='utf-8-sig') as income_file:
@@ -156,7 +154,6 @@ def read_and_create_shopee_inventory(income_file_path, order_file_path, inventor
                     item.parent_sku = order_item[SHOPEE_COLUMN_ORDER.get("PARENT_SKU")]
                     item.sku = order_item[SHOPEE_COLUMN_ORDER.get("SKU")]
                     item.details = order_item[SHOPEE_COLUMN_ORDER.get("DETAILS")]
-                    print(item.sku)
                     item.quantity = int(order_item[SHOPEE_COLUMN_ORDER.get("SALE_QUANTITY")])
 
                     item.item_price = sale_price

@@ -41,12 +41,10 @@ def write_output(out_path, sale_inventory, configs):
 
         OUT_COLUMNS = configs.OUT_COLUMNS
         csv_writer.writerow(OUT_COLUMNS)
-        print(sale_inventory.sales.values())
 
         for sale in sale_inventory.sales.values():
             #Order of list must be the same as OUT_COLUMNS
             csv_writer.writerow(sale.get_row_for_csv())
-            print(sale)
         csv_writer.writerow(sale_inventory.get_total_row_for_csv())
 
 

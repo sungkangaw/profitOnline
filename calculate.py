@@ -127,3 +127,4 @@ if __name__ == '__main__':
     else:
         print("Please check input file name. File name must start with Shopee or Lazada and has .csv extension")
         sys.exit()
+    print("Calculate Successfully")

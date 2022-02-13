@@ -34,7 +34,6 @@ class Summary:
         self.total_cost = sum([sale.total_cost for sale in self.sales.values()])
         self.total_item_price = sum([sale.item_price for sale in self.sales.values()])
         self.total_profit = sum([sale.profit for sale in self.sales.values()])
-        print(self.item_quantity)
         self.total_profit_percentage = sum([sale.net_profit for sale in self.sales.values()])/self.item_quantity
         self.total_payment_fee = sum([sale.payment_fee for sale in self.sales.values()])
         self.total_bonus = sum([sale.bonus for sale in self.sales.values()])
